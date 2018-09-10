@@ -53,21 +53,3 @@ test("Result.unwrapOr()", t => {
   t.equal(ok.unwrapOr(8), 4, "Ok.unwrapOr() should return value");
   t.end();
 });
-
-test("Result.and()", t => {
-  const err: Result<number, string> = new Err("Fail");
-  const ok: Result<number, string> = new Ok(4);
-
-  const toString = (n: number): Result<string, string> => new Ok(String(n));
-  const returnFail = (n: number): Result<number, string> => new Err("fail");
-
-  t.equal(err.and(toString).ok, false, "Err.and() should return Err");
-  t.equal(err.and(returnFail).ok, false, "Err.and() should return Err");
-  t.equal(
-    ok.and(toString).unwrap(),
-    "4",
-    "Ok.and(() => Ok) should return new Ok()"
-  );
-  t.equal(ok.and(returnFail).ok, false, "Ok.and(() => Err) return Err");
-  t.end();
-});

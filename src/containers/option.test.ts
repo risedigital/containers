@@ -10,10 +10,6 @@ test("Option.some", t => {
   t.end();
 });
 
-function lol(t: Option<number>) {
-  console.log(t.some);
-}
-
 test("Option.map()", t => {
   const none: Option<number> = new None();
   const some: Option<number> = new Some(4);
