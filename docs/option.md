@@ -15,7 +15,10 @@ This container represents an optional value. You can create a `Option<T>` by cal
 
 ## Option.some and Option.value
 
-`Option.some` is used to check if an Option contains a value. If `Option.some` is `true`, then `Option.value` exist.
+`Option.some` is used to check if an Option contains a value or not.
+
+- If `Option.some === true`, then `Option.value` exist.
+- If `Option.some === false`, then `Option.value` doesn't exist.
 
 ### Example
 
