@@ -1,14 +1,14 @@
-# Containers
+# Datatypes
 
 ## Installation
 
 ```bash
- yarn add containers-ts
+ yarn add datatypes
 ```
 
 ## Content
 
-This module provides the containers:
+This module provides the datatypes:
 
 | Type                             | Description                    |
 | -------------------------------- | ------------------------------ |
