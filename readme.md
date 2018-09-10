@@ -3,7 +3,7 @@
 ## Installation
 
 ```bash
- yarn add containers-ts
+ yarn add datatypes
 ```
 
 ## Content
