@@ -1,6 +1,6 @@
 # `Result<T, E>`
 
-This container represents an optional value. You can create a `Result<T, E>` by calling either of the following constructors:
+This container represents either a _result value_ or an _error value_. You can create a `Result<T, E>` by calling either of the following constructors:
 
 - `Ok('Hello world')`
 - `Err('Failure')`
@@ -14,6 +14,13 @@ This container represents an optional value. You can create a `Result<T, E>` by 
 - [Result.asOption()](#resultasoption)
 
 ## Result.ok, Result.result and Result.error
+
+`Result.ok` is used to check if a `Result<R, E>` is a success or failure.
+
+- If `Result.ok === true`, then `Result.result` exists.
+- If `Result.ok === false`, then `Result.error` exists.
+
+### Example
 
 `TODO`
 

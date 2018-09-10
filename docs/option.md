@@ -15,7 +15,11 @@ This container represents an optional value. You can create a `Option<T>` by cal
 
 ## Option.some and Option.value
 
-`TODO`
+`Option.some` is used to check if an Option contains a value. If `Option.some` is `true`, then `Option.value` exist.
+
+### Example
+
+`Todo`
 
 ## Option.map()
 
