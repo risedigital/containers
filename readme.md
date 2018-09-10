@@ -8,7 +8,7 @@
 
 ## Content
 
-This module provides the containers:
+This module provides the datatypes:
 
 | Type                             | Description                    |
 | -------------------------------- | ------------------------------ |
